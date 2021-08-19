@@ -1,0 +1,46 @@
+body{
+		background: #59A96A;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.container{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	margin: 0 auto;
+	width: 256px;
+	text-align: center;
+	border: 10px solid #ffffff;
+
+
+}
+.keypad{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-row: minmax(60px,auto);
+}
+input[type="text"]{
+	height: 60px;
+	width: 249px;
+	background-color: #CFCFCF;
+	border: 0px;
+	text-align: right;
+	
+
+}
+button {
+	border: none;
+	margin: 2px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+input:active,
+input:active,
+button:focus,
+button:active{outline:none}
+
+.highlight{
+	background: #BDBDBD;
+}
